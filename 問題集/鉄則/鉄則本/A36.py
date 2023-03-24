@@ -1,0 +1,9 @@
+n,k = map(int,input().split())
+
+if k<2*n -2:
+    print("No")
+    exit()
+if k%2 == 0:
+    print("Yes")
+    exit()
+print("No")

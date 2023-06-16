@@ -12,4 +12,5 @@ def divisors(n):
 for n in range(N):   # ベンチマーク用
     divisors(n)
 """""
+
 print(divisors(12))

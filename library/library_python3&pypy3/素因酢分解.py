@@ -53,6 +53,28 @@ def Eratosthenes_num(N):#約数の個数を列挙？
 
 print(Eratosthenes_num(50))
 
+
+
+def Eratosthenes(N):#約数列挙
+    # テーブル
+    isprime = [2] * (N+1)
+    isprime[1] = 1
+
+    # ふるい
+    for p in range(2, N+1):
+        # p 以外の p の倍数から素数ラベルを剥奪
+        if isprime[p] == 2:
+            q = p * 2
+            while q <= N:
+                isprime[q] = p
+                q += p
+    
+    return isprime
+
+
+
+
+
 #N回高速素因数分解前処理NloglogN
 #クエリ処理 logN
 

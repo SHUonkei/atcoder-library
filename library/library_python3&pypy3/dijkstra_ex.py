@@ -74,10 +74,10 @@ print("NO")
 N,M = map(int,input().split())
 e = [[] for i in range(N)] 
 prev = [-1] * len(e) 
-
+INF = 10**18
 def dijkstra(G,r):
     import heapq
-    cur = [float("inf")]*len(G)
+    cur = [INF]*len(G)
     que = []
     cur [r] = 0
     heapq.heappush(que,(0,r))

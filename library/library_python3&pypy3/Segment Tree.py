@@ -14,7 +14,7 @@ readlines = sys.stdin.buffer.readlines
 #ベースの1-indexed
 
 class SegTree:
-    X_unit = 1 << 30#モノイドの単位元
+    X_unit = 1 << 60#モノイドの単位元
     X_f = min
 
     def __init__(self, N):
